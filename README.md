@@ -1,4 +1,4 @@
-# Vibes Example
+# Vibes
 
 This is the website for Hack Club's YSWS Vibes!
 
