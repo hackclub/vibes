@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vibes YSWS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <meta http-equiv="refresh" content="2.5;url=https://canva.link/h5h7vnfrc4kvnlr">
+  <style>
+    .redirect-message {
+      text-align: center;
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin: 1.5rem 0;
+    }
+
+    .fallback-details {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <a class="banner" href="https://hackclub.com/"><img style="position: absolute; top: 0; left: 10px; border: 0; width: 128px; z-index: 1000;" src="https://assets.hackclub.com/flag-orpheus-top.svg" alt="Hack Club"/></a>
+  
+  <div class="container">
+    <h1>Vibes</h1>
+    <p class="subtitle">Build a website with good vibes (and a little help from AI) and throw a club pizza party!</p>
+
+    <div id="redirectMessage" class="redirect-message">
+      You are being redirected to the Vibes Canva Slideshow...
+    </div>
+
+    <div id="fallbackDetails" class="fallback-details">
+      <br>
+      
+      <div style="font-size: 1.3rem;">
+        <h2>Redirect?</h2>
+        <p>
+          This is suposed to take you to the slideshows made for Vibes. If you have not been automatically redirected then click <a href="https://canva.link/h5h7vnfrc4kvnlr">this</a> link. Thank you!
+        </p>
+      </div>
+
+      <br>
+
+      <div class="cta">
+        <button onclick="window.location.href='./'">Or click me to head back to the main page!!</button>
+      </div>
+    </div>
+
+    <div class="footer">
+      <b>Fun Fact</b>: This project was submitted to vibes!
+      <br>
+      Made with ❤️ by ChatGPT + <a href="https://hackclub.com">Hack Club</a>
+    </div>
+  </div>
+
+  <script>
+    // If redirect fails or is blocked, show the existing fallback UI after 5 seconds.
+    setTimeout(function () {
+      var message = document.getElementById("redirectMessage");
+      var fallback = document.getElementById("fallbackDetails");
+
+      if (message) {
+        message.style.display = "none";
+      }
+
+      if (fallback) {
+        fallback.style.display = "block";
+      }
+    }, 5000);
+  </script>
+</body>
+</html>
