@@ -35,7 +35,10 @@
     <div class="card" id="intro">
       <h2>Leaders Only!</h2>
       <p>
-        So, you want to run a Vibes club meeting!? Great! Here are some resources to help you get started: 
+        So, you want to run a Vibes club meeting!? Great! Here are some resources to help you get started:
+      </p>
+      <p>
+        <strong>Please read the <a href="https://docs.google.com/document/d/1y4bx1WHdbiX7FYv84U7bsU_sEBE3gqcyYahhBGwrHko/edit?usp=sharing" target="_blank" rel="noopener">Workshop Guide</a> before running your workshop</strong> — it's important that every submission follows it!
       </p>
     </div>
 
@@ -72,5 +75,26 @@
       Built with good vibes by a club leader, with a little help from AI &amp; <a href="https://hackclub.com">Hack Club</a>
     </div>
   </div>
+
+  <div class="modal-overlay" id="guide-modal">
+    <div class="modal">
+      <button class="modal-close" id="guide-modal-close" aria-label="Close">&times;</button>
+      <h2>Before you run your workshop</h2>
+      <p>It's very important that all submissions follow the new Workshop Guide. Please give it a read before your meeting!</p>
+      <a class="modal-link-btn" href="https://docs.google.com/document/d/1y4bx1WHdbiX7FYv84U7bsU_sEBE3gqcyYahhBGwrHko/edit?usp=sharing" target="_blank" rel="noopener">Open the Guide</a>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      var modal = document.getElementById('guide-modal');
+      var closeBtn = document.getElementById('guide-modal-close');
+      function closeModal() { modal.setAttribute('hidden', ''); }
+      closeBtn.addEventListener('click', closeModal);
+      modal.addEventListener('click', function (e) {
+        if (e.target === modal) closeModal();
+      });
+    })();
+  </script>
 </body>
 </html>
